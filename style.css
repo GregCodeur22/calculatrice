@@ -1,0 +1,44 @@
+.app {
+    border:2px solid teal;
+    width: 70%;
+    margin: 3rem auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 50px repeat(5,30px);
+    grid-template-areas: 
+    "result result result result"
+    "9 8 7 clear"
+    "6 5 4 clear"
+    "3 2 1 clear"
+    "0 dot plus minus"
+    "equal equal time div"
+    ;
+    border-radius: 4px;
+}
+
+h3{
+    margin: 7px 2rem 0 0;
+    font-size: 2rem;
+    grid-area: result;
+    text-align: right;
+}
+
+#clear{
+    grid-area: clear;
+}
+
+#equal{
+    grid-area: equal;
+}
+
+button{
+    background: teal;
+    border: 1px solid rgb(219, 220, 213);
+    border-radius: 3px;
+    transition: 0.9s;
+}
+
+button:hover{
+    background: rgb(6, 185, 185);
+}
